@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Launch Radar — which pre-token protocol is worth farming next</title>
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Token Launch Radar</h1>
+    <p class="sub">Which pre-token protocol is worth farming next — ranked by what its token would be worth if it launched.</p>
+  </div>
+  <div class="badge">v2 &middot; radar-3 model</div>
+</header>
+
+<section class="strip" id="integrity"></section>
+
+<section class="card controls">
+  <label>Search <input id="q" type="search" placeholder="name, slug or category&hellip;" autocomplete="off"></label>
+  <label>Category <select id="cat"><option value="">All categories</option></select></label>
+  <label>Chain <select id="chain"><option value="">All chains</option></select></label>
+  <label class="check"><input id="wl" type="checkbox"> Watchlist only</label>
+  <span class="count" id="count"></span>
+</section>
+
+<section class="card" id="board-wrap">
+  <table id="board">
+    <thead><tr>
+      <th data-k="rank">#</th>
+      <th data-k="name">Protocol</th>
+      <th data-k="category">Category</th>
+      <th data-k="chains">Chains</th>
+      <th data-k="tvl" class="num">TVL</th>
+      <th data-k="change7d" class="num">7d</th>
+      <th data-k="multiple" class="num">Multiple</th>
+      <th data-k="implied" class="num">Implied value</th>
+      <th data-k="p_token" class="num">P(token)</th>
+      <th data-k="expected" class="num">Expected</th>
+    </tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <p class="fine">Click a row for its detail view and farm plan. Click a column header to sort. Implied value is the value <em>if</em> a token launches; Expected multiplies it by the category's token odds. A protocol records no token means its DefiLlama record carries none — never that it has none.</p>
+</section>
+
+<section class="card" id="detail" hidden></section>
+
+<!--MODEL-CARD-->
+
+<section class="card" id="appendix">
+  <h2>Set aside — and why</h2>
+  <p>These protocols record no token either, but the house rule sets them aside as launch subjects: a centralized exchange, a wrapped or staked product of a token that already trades, a versioned sibling, or an exchange's own product. They are listed here so the radar shows its work instead of hiding them.</p>
+  <div id="excluded"></div>
+</section>
+
+<footer>
+  <p>Built from the sealed DefiLlama snapshot dated <span id="asof"></span>. Every figure on this page comes from that snapshot; nothing is fetched at runtime and the page makes no network requests. Farm gas figures are typical per-chain estimates, not quotes. Implied values are this entry's own claim, never make.fun's. This dashboard is an entry for the make.fun best token launch radar bounty.</p>
+</footer>
+
+<script src="../data.js"></script>
+<script src="radar.js"></script>
+</body>
+</html>
