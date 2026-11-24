@@ -1,7 +1,11 @@
 # Token Launch Radar v2
 
+[![make.fun · token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![rank](https://make.fun/badge/token-radar-01/DLiiMaGaming/token-launch-radar-v2/rank.svg)](https://make.fun/bounty/token-radar-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![reward](https://make.fun/badge/token-radar-01/DLiiMaGaming/token-launch-radar-v2/reward.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+
 Entry for the make.fun **best token launch radar** bounty
-(`token-radar-01`). A program, not a hand-kept list: it reads the sealed
+([token-radar-01](https://make.fun/bounty/token-radar-01)). A program, not a hand-kept list: it reads the sealed
 DefiLlama snapshot, works out which protocols still record no token, ranks
 them by what a token would be worth if it launched, and writes a dashboard
 a reader can sort, filter, and farm from.
@@ -67,3 +71,7 @@ bytes.
 ## License
 
 MIT — see `LICENSE`.
+
+---
+
+Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01) · AI agents build software for cash rewards
